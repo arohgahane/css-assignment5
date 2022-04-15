@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FEF848;;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.grid-container{
+    width: 700px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 70px;
+    column-gap: 70px;
+    margin: 0 auto;
+}
+
+.grid-item{
+    border: 1px solid black;
+    width: 120px;
+    height: 120px;
+}
+
+.item1{
+    background-color: #518991;
+    border: none;
+    /* animation-name: skew1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-play-state: running; */
+    animation: skew1 4s infinite ease-in 0s alternate running;
+}
+
+@keyframes skew1{
+    from{
+        transform: skewX(20deg);
+    }
+    to{
+        transform: skewY(-20deg);
+    }
+}
+
+.item2{
+    background-color: #A0A0A0;
+    border: none;
+    /* animation-name: skew2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-play-state: running; */
+    animation: skew2 4s infinite ease-in 0s alternate running;
+}
+
+@keyframes skew2{
+    from{
+        transform: skewX(-20deg);
+    }
+    to{
+        transform: skewY(20deg);
+    }
+}
+
+.item3{
+    background-color: #518991;
+    border: none;
+    animation: rotate1 4s infinite ease-in-out 0s normal running;
+}
+
+@keyframes rotate1{
+    from{
+        transform: rotate(-360deg);
+    } 
+}
+
+.item4{
+    background-color: #375D62;
+    border: 5px solid blue;
+    animation: rotate2 4s infinite linear 0s alternate running;
+}
+
+@keyframes rotate2 {
+    from{
+        transform: rotateX(60deg);
+    }
+}
+
+.item5{
+    background-color: #6F3327;
+    border: 5px solid brown;
+    animation: rotate3 4s infinite ease-in-out 0s alternate running;
+}
+
+@keyframes rotate3 {
+    from{
+        transform: rotateY(60deg);
+    }
+}
+
+.item6{
+    background-color: #447636;
+    border: 5px solid green;
+    animation: rotate4 4s infinite ease-in-out 0s alternate running;
+}
+
+@keyframes rotate4{
+    from{
+        transform: rotate(180deg);
+    }
+}
+
+a{
+    text-align: center;
+    color: #674C29;
+}
+
+h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-left: 10px solid #F29937;
+    border-right: 10px solid #32761B; */
+    /* background-repeat: repeat-x; */
+    /* background-image: url(./city.png); */
+}
+
+.container{
+    width: 30%;
+    /* border: 2px solid black; */
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    font-weight:500;
+    font-family:'Times New Roman', Times, serif
+}
+
+.content1{
+    background-color: #F29937;
+    margin-right: 10px;
+}
+
+.content2{
+    background-color: #FFFFFF;
+    margin-right: 10px;
+
+}
+
+.content3{
+    background-color: #32761B;
+}
+.sun{
+    float: right;
+    position: absolute;
+    right: 100px;
+    height: 150px;
+    
+}
+
+.city{
+    width: 100%;
+    position: relative;
+    top: 150px;
+    text-align: center;
+    /* animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state: running; */
+    animation: move 10s infinite ease 0s normal running;
+
+}
+
+.road{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 140px;  
+    /* animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state: running; */
+    animation: move 10s infinite ease 0s normal running;
+}
+
+@keyframes move{
+    from{
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s; */
+    transform-origin: left;
+    transition: all 1s linear 0s;
+    transform: scaleX(3);
+    }
+}
+
+.car{
+    position: absolute;
+    top: 350px;
+    left: 450px;
+    width: 500px;
+}
+
+.wheel1{
+    width: 90px;
+    position: absolute;
+    top: 465px;
+    left: 495px;
+    /* animation-name: rotate1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state: running; */
+    animation: rotate1 4s infinite ease-in-out 0s normal running;
+}
+
+@keyframes rotate1{
+    from{
+        transform: rotate(-360deg);
+    } 
+}
+
+.wheel2{
+    width: 90px;
+    position: absolute;
+    top: 465px;
+    left: 800px;
+    animation: rotate1 4s infinite ease-in-out 0s normal running;
+}
+
+.flag{
+    height: 100px;
+    position: absolute;
+    top: 342px;
+    left: 800px;
+}
